@@ -1,0 +1,12 @@
+===============
+=Common issues=
+===============
+
+___________________________________________________
+|Issue #1 Can't sort Downloads folder or Documents|
+-------------------------------------------------------------------------------------------------------------------------------
+If you want to sort the Downloads folder the path needs to look like this. C:\Users\[Replace this with your username]\Downloads
+The same goes for Documents.
+-------------------------------------------------------------------------------------------------------------------------------
+
+If you have any other issues makes sure you have os and shutil packages installed or create 'New issue' on the github repo
