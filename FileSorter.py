@@ -1,8 +1,11 @@
 import os
 import shutil
+import tkinter  # python -m pip install tkinter
+from tkinter import filedialog
 
-print("If you want to sort Downloads folder or Documents folder please read HELP.txt")
-user_directory = input("Paste here the folder directory that you want to sort: ")
+
+print("Select a directory you want to sort")
+user_directory = tkinter.filedialog.askdirectory(initialdir="/",  title='Please select a directory')
 s = os.chdir(user_directory)
 current = os.getcwd()
 
@@ -93,4 +96,16 @@ for file in files:
             print(f"Moved {file} to {user_directory}\Archives_Sorted")
             break
 
-input("[+] Files sorted")
+
+def popupmsg(msg):
+    NORM_FONT = ("Helvetica", 10)
+    popup = tkinter.Tk()
+    popup.wm_title("!")
+    label = tkinter.Label(popup, text=msg, font=NORM_FONT)
+    label.pack(side="top", fill="x", pady=10)
+    button = tkinter.Button(popup, text="Okay", command=popup.destroy)
+    button.pack()
+    popup.mainloop()
+
+
+popupmsg("Files sorted")
