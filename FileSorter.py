@@ -1,7 +1,7 @@
 import os
 import shutil
 
-print("If you have any issues or want to sort Downloads folder please read HELP.txt")
+print("If you want to sort Downloads folder or Documents folder please read HELP.txt")
 user_directory = input("Paste here the folder directory that you want to sort: ")
 s = os.chdir(user_directory)
 current = os.getcwd()
@@ -48,42 +48,49 @@ for file in files:
         if file.endswith(ex):
             destination = f'{user_directory}\Images_Sorted'
             shutil.move(file, destination)
+            print(f"Moved {file} to {user_directory}\Images_Sorted")
             break
 
     for ex in videos:
         if file.endswith(ex):
             destination = f'{user_directory}\Videos_Sorted'
             shutil.move(file, destination)
+            print(f"Moved {file} to {user_directory}\Videos_Sorted")
             break
 
     for ex in sounds:
         if file.endswith(ex):
             destination = f'{user_directory}\Sounds_Sorted'
             shutil.move(file, destination)
+            print(f"Moved {file} to {user_directory}\Sounds_Sorted")
             break
 
     for ex in text:
         if file.endswith(ex):
             destination = f'{user_directory}\Texts_Sorted'
             shutil.move(file, destination)
+            print(f"Moved {file} to {user_directory}\Texts_Sorted")
             break
 
     for ex in applications:
         if file.endswith(ex):
             destination = f'{user_directory}\Applications_Sorted'
             shutil.move(file, destination)
+            print(f"Moved {file} to {user_directory}\Applications_Sorted")
             break
 
     for ex in code:
         if file.endswith(ex):
             destination = f'{user_directory}\Code_Sorted'
             shutil.move(file, destination)
+            print(f"Moved {file} to {user_directory}\Code_Sorted")
             break
 
     for ex in archives:
         if file.endswith(ex):
             destination = f'{user_directory}\Archives_Sorted'
             shutil.move(file, destination)
+            print(f"Moved {file} to {user_directory}\Archives_Sorted")
             break
 
 input("[+] Files sorted")
