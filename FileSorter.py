@@ -3,6 +3,9 @@ import shutil
 import tkinter  # python -m pip install tkinter
 from tkinter import filedialog
 
+root = tkinter.Tk()
+root.withdraw()
+
 
 print("Select a directory you want to sort")
 user_directory = tkinter.filedialog.askdirectory(initialdir="/",  title='Please select a directory')
@@ -99,6 +102,7 @@ for file in files:
 
 def popupmsg(msg):
     NORM_FONT = ("Helvetica", 10)
+    print("[+] Files sorted you can close this windows now")
     popup = tkinter.Tk()
     popup.wm_title("!")
     label = tkinter.Label(popup, text=msg, font=NORM_FONT)
