@@ -11,7 +11,7 @@ files = os.listdir(current)
 # File extensions
 images = [".png", ".jpg", ".jpeg", ".gif", ".jfif"]  # File extensions for images
 videos = [".mp4", ".mov", ".webm", ".mkv", ".flv", ".avi"]  # File extensions for videos
-sounds = [".mp3", ".wav", ".flac", ".ogg"]
+sounds = [".mp3", ".wav", ".flac", ".ogg"]  # File extensions for sounds
 text = [".txt", ".pdf", ".doc", ".docx", ".odt"]  # File extensions for text documents
 applications = [".exe"]  # File extension for applications
 code = [".py", ".cpp", ".js", ".java", ".cs", ".php", ".c", ".html", ".css", ".lua"]    # File extensions for code
