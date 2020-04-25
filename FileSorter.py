@@ -100,16 +100,4 @@ for file in files:
             break
 
 
-def popupmsg(msg):
-    NORM_FONT = ("Helvetica", 10)
-    print("[+] Files sorted you can close this windows now")
-    popup = tkinter.Tk()
-    popup.wm_title("!")
-    label = tkinter.Label(popup, text=msg, font=NORM_FONT)
-    label.pack(side="top", fill="x", pady=10)
-    button = tkinter.Button(popup, text="Okay", command=popup.destroy)
-    button.pack()
-    popup.mainloop()
-
-
-popupmsg("Files sorted")
+input("[+] Files sorted you can close this window now")
